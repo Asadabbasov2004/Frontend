@@ -6,3 +6,44 @@
 main .row{
     flex-wrap: wrap;
 } 
+#product-main .row {
+   width: 88%; 
+   margin: 20px auto;
+}
+#product-main .row  div{
+    width:45% ;
+    height: 600px;
+    text-align: center;
+}
+#product-main img{
+height: 100%;   
+width: auto; 
+}
+#product-main .right{
+    font-size: 20px;
+    line-height: 33px;
+}
+.right a{
+    width: max-content;
+    margin: 30px auto 0px ;
+    background-color: rgb(27, 27, 27);
+    padding: 10px 24px ;
+    border-radius: 30px;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+}
+@media  only screen and (min-width :301px ) and (max-width:1100px){
+    #product-main .row{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    #product-main .row div{
+        width: 80%;
+        margin: 0px auto;
+    }
+   footer{
+    text-align: center;
+   }
+}

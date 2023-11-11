@@ -3,7 +3,6 @@ let row = document.querySelector("#home-main .row")
 
 localStorage.setItem("send_id",2)
 
-
 // fetch("https://api.tvmaze.com/shows")
 // .then(res => res.json())
 // .then(data =>console.log(data))
@@ -18,7 +17,7 @@ axios.get("https://api.tvmaze.com/shows")
       let data =summary.slice(0,15).join(" ")
     
     row.innerHTML +=`    
-  <div class="card mb-3" style="width: 18rem;"  onclick="send(this)" id="${res.data[i].id}">
+  <div class="card mb-3 mt-5" style="width: 18rem;"  onclick="send(this)" id="${res.data[i].id}">
   <img src="${res.data[i].image.medium}" class="m-2" alt="..." >
 
   <div class="card-body ">
@@ -30,9 +29,3 @@ axios.get("https://api.tvmaze.com/shows")
     
   }  
 })
-
-
-
-{/* <a href="./sproduct.html">
-<img src="${res.data[i].image.medium}" class="m-2" alt="..." >
-</a>  */}
